@@ -1,6 +1,4 @@
-import mongoose, { Mongoose } from "mongoose";
-import express from "express";
-const app=express()
+import { app } from "./app.js";
 import database_connection from "./db/index.js";
 import dotenv from 'dotenv';  // If using ES Modules
 dotenv.config();
@@ -18,3 +16,4 @@ database_connection()
 .catch((err)=>{
     console.log("error-" +err);
 })
+
